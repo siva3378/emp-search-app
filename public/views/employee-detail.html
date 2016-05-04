@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-offset-3 col-md-6 col-sm-12">
+        <div class="list-group">
+            <div class="list-group-item row">
+                <span class="glyphicon glyphicon-user emp-icon icon-2x text-info"></span>
+
+                <h4 class="list-group-item-heading"><br>{{emp.first_name}} {{emp.last_name}}</h4>
+                <p class="list-group-item-text">{{emp.role}}</p>
+            </div>
+            <div class="list-group-item" ng-repeat="aKey in contactKeys">
+                <h5 class="list-group-item-heading">{{aKey.name}}</h5>
+                <p class="list-group-item-text">{{emp.contact[aKey.key]}}</p>
+            </div>
+        </div>
+    </div>
+</div>

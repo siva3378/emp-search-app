@@ -1,0 +1,25 @@
+body { 
+	padding-top:60px; 
+	background-color: #f0f0f0
+}
+
+.emp-icon{
+	    display: inline-block;
+    height: 50px;
+    width: 50px;
+    float: left;
+    font-size: 26px;
+    color: gray;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    padding: 11px;
+    margin-right: 20px;
+}
+
+.emp-icon.icon-2x{
+	height: 100px;
+    width: 100px;
+    font-size: 52px;
+    padding: 22px;
+    margin-right: 30px;
+}

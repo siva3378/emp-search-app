@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="col-md-offset-3 col-md-6 col-sm-12">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-group ">
+                    <div class="input-group">
+                        <input 
+                        	id="search" 
+                        	name="search" 
+                        	ng-model="nameSearch"
+                        	class="form-control input-lg" 
+                        	placeholder="Search by name" type="text">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-lg"
+                            	ng-click="searchByName(nameSearch)">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="list-group">
+            <a ng-href="employees/{{emp._id}}" class="list-group-item row" ng-repeat="emp in list">
+                <span class="glyphicon glyphicon-user emp-icon"></span>
+                <h4 class="list-group-item-heading">{{emp.first_name}} {{emp.last_name}}</h4>
+                <p class="list-group-item-text">{{emp.role}}</p>
+            </a>
+        </div>
+        <div class="alert alert-warning" role="alert" ng-if="list.length===0">
+    		Please enter employee name & search.
+        </div>
+    </div>
+</div>
